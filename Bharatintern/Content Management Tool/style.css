@@ -1,0 +1,145 @@
+body {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    background-color: white;
+    margin: 0;
+    padding: 60px;
+    }
+
+
+
+.top-section{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width:768px) {
+    .top-section{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.logo img{
+    width:auto;
+    height: 300px;
+}
+
+.font-color{
+    color: rgb(57, 27, 255);
+    font-weight: 800;
+    
+    
+}
+
+img{
+    width:auto;
+    height: 300px;
+}
+
+.preview {
+    width: 15cm;
+    height: 15cm;
+}
+
+label{
+    font-size:25px;
+}
+
+input{
+    margin-bottom: 12px;
+    margin-top: 12px;
+    font-size: 20px;
+    
+}
+
+.input{
+    width: 100%;
+    padding: 6px;
+    border-radius: 8px;
+}
+
+.video-preview {
+    width: 15cm;
+    height: auto;
+}
+
+.button-section {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.button-section button {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 1;
+    animation: slideTop ease 1s forwards;
+    animation-delay: 2s;
+    box-shadow: 0 0 5px #0ef, 0 0 5px #0ef;
+}
+
+.button-section button:hover {
+    box-shadow: 0 0 10px cyan, 0 0 15px cyan, 0 0 10px cyan, 0 0 10px cyan,
+      0 0 10px cyan;
+      cursor: pointer;
+  }
+
+.data-container {
+    max-height: fit-content;
+}
+
+.card {
+    border: 1px solid grey;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-header {
+    background-color:white;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.card-title {
+    margin: 0;
+}
+
+.card-body {
+    margin-top: 10px;
+}
+
+.btn-box {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideTop ease 1s forwards;
+    animation-delay: 2s;
+    box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
+  }
+  .btn-box:hover {
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan,
+      0 0 200px cyan;
+  }

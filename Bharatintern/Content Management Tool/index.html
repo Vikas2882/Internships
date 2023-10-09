@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Content Management Tool</title>
+    <link rel="stylesheet" href="style.css"type="text/css"  media="screen" />
+
+    <script src="script.js"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/19c75da57a.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="top-section">
+        <div class="logo">
+           <img src="R.jpg" alt="Blog">
+        </div>
+    </div>
+
+    <div class="card">
+        <div>
+            <label class="font-color" for="title"> Post title:</label>
+            <input class="input" type="text" id="title" placeholder="Enter Your Blog Title">
+            <label class="font-color" for="content">Post description:</label>
+            <input class="input" id="content" placeholder="Enter Your Blog Description" />
+        </div>
+
+        <div>
+            <label class="label-section font-color " for="image">Upload image here:</label>
+            <input style="color: black;" type="file" id="image" accept="image/*">
+        </div>
+
+        <div>
+            <label class="label-section font-color" for="video">Upload video here:</label>
+            <input style="color: black;" type="file" id="video" accept="video/*">
+        </div>
+    </div>
+
+    <div class="button-section">
+        <button onclick="submitForm()">Submit</button>
+    </div>
+
+    <div class="data-container">
+        <div class="data-section" id="dataSection">
+        </div>
+    </div>
+</body>
+
+</html>
